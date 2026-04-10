@@ -1,0 +1,38 @@
+{
+  "skill_name": "suno-promptwriting",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "给我写一个 Suno 提示词，做一首中文 city pop / sophisti-pop，女声，1980s 港风，晚夜霓虹感。我要 Prompt Style、Exclude Styles、带 section tags 的歌词，避免太像现代抖音流行。",
+      "expected_output": "Initial-generation deliverable with Prompt Style, Exclude Styles, and Lyrics blocks. The prompt should be metadata-like, avoid lyric bleed, and counter drift toward generic modern pop.",
+      "files": [],
+      "expectations": [
+        "The output includes separate Prompt Style, Exclude Styles, and Lyrics blocks.",
+        "The Lyrics block begins with `///*****///` and includes at least one bracketed section header.",
+        "The Prompt Style is structured metadata rather than a single comma-separated tag dump or lyric-like prose."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "我现在写的 Suno 风格总会飘成 pop 和 trap。帮我重写一个偏工业摇滚/暗潮电子的 Prompt Style，并给我 Exclude Styles，不用写整首歌词，但要给我至少一个 section 的歌词格式示例。",
+      "expected_output": "Initial-generation style-repair output that reinforces non-pop anchors, adds Exclude Styles, and includes a minimal lyrics section example without turning the style prompt into singable text.",
+      "files": [],
+      "expectations": [
+        "The output includes a Prompt Style block and an Exclude Styles block.",
+        "The response explicitly counters pop or trap drift through Exclude Styles or reinforced genre constraints.",
+        "The output includes a minimal lyrics section example with bracketed meta tags instead of a full song."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "我已经有一首歌了，想用 Suno Cover 把它做得更干净、更高级一点，尽量保持原曲。给我最小化的 Cover prompt 和建议参数。",
+      "expected_output": "Cover-remaster deliverable with a minimal Cover Prompt and settings. It should not force a full lyrics block and should prefer high adherence defaults.",
+      "files": [],
+      "expectations": [
+        "The output includes a Cover Prompt block and a Settings block.",
+        "The output does not force a full Lyrics block for this cover-remaster request.",
+        "The parameter guidance prefers high-adherence remaster defaults rather than exploratory generation settings."
+      ]
+    }
+  ]
+}

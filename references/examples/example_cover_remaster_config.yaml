@@ -1,0 +1,15 @@
+# Example: Cover-based remastering (existing song)
+#
+# Produces a minimal Cover prompt + suggested settings (from `suno.md`).
+
+mode: cover_remaster
+
+cover_prompt:
+  genre: "original genre"
+  instrumentation: "acoustic drums with realistic sound"
+  mastering: "clean, modern, professional sound"
+
+settings:
+  weirdness: 0
+  style_influence: 100
+  audio_influence: 100

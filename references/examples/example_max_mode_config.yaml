@@ -1,0 +1,35 @@
+# Example MAX Mode stack config (Format B)
+
+format: B
+
+prompt_style:
+  genre: "outlaw country, 70s singer-songwriter"
+  instruments: "single dreadnought acoustic, baritone male, vocal fry, blue notes, melismatic runs"
+  style_tags: "tape saturation, close-mic presence, small room acoustics, handheld mic grit, dry & raw"
+
+exclude_styles:
+  - Electronic
+  - Synthesizer
+  - Drum Machine
+
+start_on:
+  enabled: true
+  phrase: "I woke up"
+
+lyrics:
+  divider: true
+  sections:
+    - header: "Verse 1"
+      meta: ["low energy", "room reverb"]
+      lines:
+        - "I woke up with dust on my boots"
+        - "A cheap motel and a lonely tune"
+        - "Coffee cold and a broken truth"
+        - "Still chasing down a better moon"
+    - header: "Chorus 1"
+      meta: ["anthemic chorus", "building energy", "stacked harmonies"]
+      lines:
+        - "I’m not done, I’m not through"
+        - "(keep going now...)"
+        - "I’m learning what a heart can do"
+        - "Let the road sing back to you"

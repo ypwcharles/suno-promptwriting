@@ -1,0 +1,4 @@
+interface:
+  display_name: "Suno Promptwriting"
+  short_description: "Suno generation + cover-remaster workflow"
+  default_prompt: "Use $suno-promptwriting to handle either initial Suno generation or Cover-based remastering, following the bundled `suno.md` guide in this skill and returning only the blocks appropriate for the task mode."

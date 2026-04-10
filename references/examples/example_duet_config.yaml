@@ -1,0 +1,34 @@
+# Example duet START_ON controls (Format B)
+
+format: B
+
+prompt_style:
+  genre: "modern pop-rock ballad, cinematic build"
+  instruments: "clean electric guitar, warm bass, live-feel acoustic drums, wide pads"
+  style_tags: "close vocal presence, wide stereo chorus, punchy dynamics, clean modern mix"
+
+exclude_styles:
+  - Rap
+
+duet_start_on:
+  enabled: true
+  male_phrase: "I remember"
+  female_phrase: "You said"
+
+lyrics:
+  divider: true
+  sections:
+    - header: "Verse 1"
+      meta: ["spoken word verse", "low energy"]
+      lines:
+        - "I remember the night we tried to be brave"
+        - "Holding our words like a match in the rain"
+        - "(don’t let it go...)"
+        - "I looked away so my eyes wouldn’t say"
+    - header: "Chorus 1"
+      meta: ["anthemic chorus", "building energy", "stacked harmonies"]
+      lines:
+        - "You said we’d make it, we’d make it through"
+        - "I said I’ll stay if you want me to"
+        - "If the lights go out, I’ll be near"
+        - "(I’m right here...)"

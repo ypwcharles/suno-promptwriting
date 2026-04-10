@@ -1,0 +1,43 @@
+# Example “full” config (Format A + settings + persona)
+
+format: A
+
+settings:
+  weirdness: 45
+  style_influence: 80
+  vocal_gender: Female
+
+persona: "Female contralto, androgynous, cold, monotone delivery, sharp enunciation, emotionally numb, sinister tone, reminiscent of Grimes with HEALTH-like atmosphere."
+
+prompt_style:
+  genre: "indie rock, dark pop undertone, 2010s alt, moody & minimal"
+  vocal: "intimate female lead, sharp enunciation, restrained vibrato, emotionally detached"
+  instrumentation: "clean electric guitar arpeggios, warm bass, tight acoustic drums, subtle analog pads"
+  production: "close-miked vocal, narrow stereo verse and wide chorus, controlled high end, short room reverb"
+  mastering: "clean modern mix, punchy dynamics, hi-fi clarity"
+  mood: "noir, late-night tension, understated melancholy"
+
+exclude_styles:
+  - Pop
+
+start_on:
+  enabled: true
+  phrase: "I remember"
+
+lyrics:
+  divider: true
+  sections:
+    - header: "Verse 1"
+      meta: ["low energy", "room reverb"]
+      lines:
+        - "I remember the light on your door"
+        - "A quiet street and a restless heart"
+        - "I spoke too soft to be sure"
+        - "But you heard me from the start"
+    - header: "Chorus 1"
+      meta: ["anthemic chorus", "stacked harmonies", "building energy"]
+      lines:
+        - "Stay with me, don’t let it fade"
+        - "(hold me close...)"
+        - "We’re not lost, we’re just afraid"
+        - "Say my name and I’m brave"

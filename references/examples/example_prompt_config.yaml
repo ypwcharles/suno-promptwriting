@@ -1,0 +1,44 @@
+# Example config for scripts/suno_prompt_builder.py
+#
+# This script does NOT invent lyrics; it formats and checks what you provide.
+
+format: A  # A | B | C
+
+prompt_style:
+  genre: "indie folk rock, 2020s bedroom pop, Phoebe Bridgers x Big Thief vibe"
+  vocal: "soft female alto, intimate whisper-to-belt, gentle vibrato, slight nasal quality"
+  instrumentation: "fingerpicked acoustic guitar, warm upright bass, sparse piano, light ambient pads"
+  production: "lo-fi intimacy, tape warmth, close-miked vocals, narrow stereo image, natural room reverb"
+  mastering: "natural dynamics, dry & close mix, hi-fi clarity, minimal saturation"
+  mood: "melancholic, nostalgic, late-night introspection"
+
+exclude_styles:
+  - Pop
+  - Male Vocal
+
+start_on:
+  enabled: true
+  phrase: "I saw your smile"
+
+lyrics:
+  divider: true
+  sections:
+    - header: "Verse 1"
+      meta:
+        - low energy
+        - room reverb
+      lines:
+        - "I saw your smile across the room"
+        - "Like streetlights cutting through the rain"
+        - "I held my breath and let it bloom"
+        - "Afraid that wanting brings me pain"
+    - header: "Chorus 1"
+      meta:
+        - anthemic chorus
+        - stacked harmonies
+        - building energy
+      lines:
+        - "Stay a little, stay a while"
+        - "(don’t fade away...)"
+        - "I’m learning how to be alive"
+        - "When you say my name, I smile"
