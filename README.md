@@ -8,7 +8,7 @@ A self-contained Codex skill for writing Suno inputs across the full workflow:
 - persona and parameter guidance
 - Cover-based remastering for existing songs
 
-The skill ships with its own `suno.md` reference guide, curated reference files, helper scripts, example configs, and smoke tests.
+The skill ships with its own `references/suno.md` source-of-truth guide, curated reference files, helper scripts, example configs, and smoke tests.
 
 > [!NOTE]
 > This repository is designed as a skill directory. The main entrypoint is [`SKILL.md`](./SKILL.md).
@@ -34,10 +34,10 @@ It is designed to avoid the common failure modes in Suno prompting:
 suno-promptwriting/
 ├── SKILL.md
 ├── README.md
-├── suno.md
 ├── agents/
 ├── evals/
 ├── references/
+│   └── suno.md
 ├── scripts/
 └── tests/
 ```
@@ -45,7 +45,7 @@ suno-promptwriting/
 Key files:
 
 - `SKILL.md`: skill behavior, task modes, output contract, quality gates
-- `suno.md`: bundled source-of-truth guide for this skill
+- `references/suno.md`: bundled source-of-truth guide for this skill
 - `references/`: focused templates, rule summaries, curated tags, and examples
 - `scripts/suno_prompt_builder.py`: formats YAML configs into copy/paste-ready Suno blocks
 - `scripts/suno_tag_lookup.py`: searches the curated tag index

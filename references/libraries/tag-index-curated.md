@@ -1,12 +1,12 @@
 # Curated tag & style reference (from `suno.md`)
 
-Purpose: give a **high-signal, copy/paste** tag set without loading the full `suno.md` index.
+Purpose: give a **high-signal, copy/paste** tag set without loading the full `references/suno.md` index.
 
 Rule: do **not** dump large lists to the user. Pick a small coherent set and place it in:
 - Lyrics meta tags (`[Chorus | ...]`) for section-level control
 - Or Prompt Style (Format A/B/C) for global sound
 
-For the full list, search `suno.md` starting at `## Index` (line ~1376).
+For the full list, search `references/suno.md` starting at `## Index` (line ~1376).
 
 ## Meta tags — fidelity / mix / mastering
 
@@ -95,4 +95,3 @@ Use these as **building blocks** inside Format A/B/C fields (not as lyrics):
 - “small room acoustics, room tone, one-take performance, natural timing drift”
 - “tape saturation, analog warmth, low noise floor, clean master”
 - “phase-coherent low end, mono-stable bass, smooth top end, tight highs”
-

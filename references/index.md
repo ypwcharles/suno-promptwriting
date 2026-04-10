@@ -1,6 +1,6 @@
 # References index (`suno-promptwriting`)
 
-Use this file as the “table of contents” for the skill’s references. Prefer loading **one** relevant reference file instead of `suno.md` wholesale.
+Use this file as the “table of contents” for the skill’s references. Prefer loading **one** relevant reference file instead of `references/suno.md` wholesale.
 
 ## Core rules
 

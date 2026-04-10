@@ -7,9 +7,9 @@ description: Use when a user wants help with Suno song generation or Suno qualit
 
 ## Overview
 
-Generate copy/paste-ready Suno inputs (Prompt Style + Exclude Styles + Lyrics) using the exact structures and rules in the bundled `suno.md` guide in this skill directory.
+Generate copy/paste-ready Suno inputs (Prompt Style + Exclude Styles + Lyrics) using the exact structures and rules in the bundled [`references/suno.md`](./references/suno.md) guide.
 
-**Source of truth:** If any other advice conflicts with this skill, follow the bundled `suno.md`. If the user explicitly provides a different project-specific `suno.md`, treat that as an override for that task.
+**Source of truth:** If any other advice conflicts with this skill, follow the bundled [`references/suno.md`](./references/suno.md). If the user explicitly provides a different project-specific `suno.md`, treat that as an override for that task.
 
 ## Task Modes
 
@@ -342,7 +342,7 @@ When the user asks “give me tags /风格参考/有哪些标签”:
 3) Put section-specific behavior in **Lyrics meta tags** (`[Chorus | ...]`).
 4) Use references for lookup, but only output a small coherent set:
    - `references/libraries/tag-index-curated.md`
-   - Full index is inside `suno.md` at `## Index`.
+   - Full index is inside `references/suno.md` at `## Index`.
 
 Quick lookup from terminal:
 ```bash

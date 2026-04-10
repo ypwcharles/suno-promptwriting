@@ -11,6 +11,8 @@ SKILL_DIR = Path(__file__).resolve().parent.parent
 SCRIPT = SKILL_DIR / "scripts" / "suno_prompt_builder.py"
 EVALS = SKILL_DIR / "evals" / "evals.json"
 EXAMPLES = SKILL_DIR / "references" / "examples"
+REFERENCE_GUIDE = SKILL_DIR / "references" / "suno.md"
+LEGACY_GUIDE = SKILL_DIR / "suno.md"
 
 
 def run_builder(config_name: str) -> str:
@@ -52,6 +54,10 @@ class SunoPromptwritingSmokeTests(unittest.TestCase):
             for expectation in expectations:
                 self.assertIsInstance(expectation, str)
                 self.assertTrue(expectation.strip())
+
+    def test_suno_reference_guide_lives_under_references(self) -> None:
+        self.assertTrue(REFERENCE_GUIDE.is_file())
+        self.assertFalse(LEGACY_GUIDE.exists())
 
 
 if __name__ == "__main__":
